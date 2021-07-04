@@ -9,10 +9,10 @@ import javax.swing.*;
 import java.awt.event.*;
 
 /**
- * DÃ©crivez votre classe Controleur ici.
+ * Décrivez votre classe Controleur ici.
  * 
  * @author (votre nom)
- * @version (un numÃ©ro de version ou une date)
+ * @version (un numéro de version ou une date)
  */
 public class Controleur extends JPanel {
 
@@ -34,31 +34,31 @@ public class Controleur extends JPanel {
 
         setLayout(new GridLayout(2, 1));
         add(donnee);
-        donnee.addActionListener(null /* null est Ã  remplacer */);
+        donnee.addActionListener(null /* null est à remplacer */);
         JPanel boutons = new JPanel();
         boutons.setLayout(new FlowLayout());
-        boutons.add(push);  push.addActionListener(null /* null est Ã  remplacer */);
-        boutons.add(add);   add.addActionListener(null /* null est Ã  remplacer */);
-        boutons.add(sub);   sub.addActionListener(null /* null est Ã  remplacer */);
-        boutons.add(mul);   mul.addActionListener(null /* null est Ã  remplacer */);
-        boutons.add(div);   div.addActionListener(null /* null est Ã  remplacer */);
-        boutons.add(clear); clear.addActionListener(null /* null est Ã  remplacer */);
+        boutons.add(push);  push.addActionListener(null /* null est à remplacer */);
+        boutons.add(add);   add.addActionListener(null /* null est à remplacer */);
+        boutons.add(sub);   sub.addActionListener(null /* null est à remplacer */);
+        boutons.add(mul);   mul.addActionListener(null /* null est à remplacer */);
+        boutons.add(div);   div.addActionListener(null /* null est à remplacer */);
+        boutons.add(clear); clear.addActionListener(null /* null est à remplacer */);
         add(boutons);
         boutons.setBackground(Color.red);
         actualiserInterface();
     }
 
     public void actualiserInterface() {
-        // Ã  complÃ©ter
+        // à compléter
     }
 
     private Integer operande() throws NumberFormatException {
         return Integer.parseInt(donnee.getText());
     }
 
-    // Ã  complÃ©ter
-    // en cas d'exception comme division par zÃ©ro, 
-    // mauvais format de nombre suite Ã  l'appel de la mÃ©thode operande
-    // la pile reste en l'Ã©tat (intacte)
+    // à compléter
+    // en cas d'exception comme division par zéro, 
+    // mauvais format de nombre suite à l'appel de la méthode operande
+    // la pile reste en l'état (intacte)
 
 }

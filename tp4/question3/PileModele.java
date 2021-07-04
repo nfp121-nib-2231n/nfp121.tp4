@@ -8,7 +8,7 @@ public class PileModele<T> extends  java.util.Observable implements PileI<T> {
 
     private PileI<T> pile;
 
-    /* Ã  complÃ©ter */
+    /* à compléter */
 
     public PileModele(PileI<T> pile) {
         this.pile = pile;
@@ -50,6 +50,6 @@ public class PileModele<T> extends  java.util.Observable implements PileI<T> {
 }
 
 /**
- * notez qu'un message d'alerte subsiste Ã  la compilation (unsafe ...) dÃ» Ã 
- * l'emploi de notifyObservers, incontournable et sans consÃ©quence ici
+ * notez qu'un message d'alerte subsiste à la compilation (unsafe ...) dû à
+ * l'emploi de notifyObservers, incontournable et sans conséquence ici
  */

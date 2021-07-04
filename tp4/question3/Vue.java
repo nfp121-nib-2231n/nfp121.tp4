@@ -8,12 +8,12 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * D√©crivez votre classe Controleur ici.
+ * DÈcrivez votre classe Controleur ici.
  * 
  * @author (votre nom)
- * @version (un num√©ro de version ou une date)
+ * @version (un numÈro de version ou une date)
  */
-public class Vue extends JPanel {// √† compl√©ter
+public class Vue extends JPanel implements Observer{// ‡ complÈter
 
     private JLabel etatPile;
     private PileModele<Integer> pile;
@@ -25,7 +25,8 @@ public class Vue extends JPanel {// √† compl√©ter
         setLayout(new FlowLayout(FlowLayout.LEFT));
         add(etatPile);
         setBackground(Color.green);
-        // inscription aupr√®s du mod√®le comme observateur
+        // inscription auprËs du modËle comme observateur
+        pile.addObserver(this);
     }
 
     public void update(Observable obs, Object arg) {
